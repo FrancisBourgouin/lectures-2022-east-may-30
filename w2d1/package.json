@@ -1,0 +1,19 @@
+{
+  "name": "w2d1",
+  "version": "1.0.0",
+  "description": "## Today's menu",
+  "main": "coding_styles.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  }
+}
