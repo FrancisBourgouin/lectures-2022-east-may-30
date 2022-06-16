@@ -23,10 +23,7 @@ app.use(express.static(path.join(__dirname, "public"))); // Enables read access 
 app.use(
   cookieSession({
     name: "session",
-    keys: [
-      "I like potatoes in the sun with a glass of marmalade",
-      "Hello I like potato again hahahahahah",
-    ],
+    keys: [process.env.CS_KEY_1, process.env.CS_KEY_2],
 
     // Cookie Options
     maxAge: 24 * 60 * 60 * 1000, // 24 hours
