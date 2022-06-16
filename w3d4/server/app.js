@@ -1,3 +1,4 @@
+require("dotenv").config(); // Reads the content of .env and add them to process.env
 const express = require("express"); // Imports the express framework / library
 const path = require("path"); // Compat for file paths
 const cookieParser = require("cookie-parser"); // Parses the cookie string to fancy cookie object
@@ -34,14 +35,14 @@ app.use(
 const user1 = {
   email: "periodic@table.com",
   name: "Dimitri Ivanovich Mendeleiv",
-  password: bcrypt.hashSync("hydrogen", salt),
+  password: bcrypt.hashSync(process.env.USER1_PASSWORD, salt),
   secret: "Actually prefers biology over chemistry",
 };
 
 const user2 = {
   email: "pontiac@bandit.com",
   name: "Doug Judy",
-  password: bcrypt.hashSync("rosa", salt),
+  password: bcrypt.hashSync(process.env.USER2_PASSWORD, salt),
   secret: "Doesn't know how to drive stick",
 };
 
