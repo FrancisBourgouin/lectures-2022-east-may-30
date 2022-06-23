@@ -1,0 +1,20 @@
+$primary-color: rgb(202, 3, 202);
+$secondary-color: #c0ffee;
+$highlight-color: #bada55;
+
+section.blog-list {
+  background-color: $primary-color;
+  color: black;
+
+  article {
+    background-color: $secondary-color;
+
+    p {
+      background-color: $primary-color;
+    }
+  }
+}
+body {
+  background-color: #101;
+  color: white;
+}

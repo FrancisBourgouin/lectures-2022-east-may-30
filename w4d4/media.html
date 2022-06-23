@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    /* Mobile First! */
+    body {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+      display: block;
+      margin: 1em 0;
+    }
+
+    @media screen and (min-width: 1000px) {
+      body {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 40%;
+        margin: 1em;
+      }
+    }
+
+    @media screen and (min-width: 1500px) {
+      img {
+        width: 30%;
+      }
+    }
+  </style>
+  <body>
+    <p>320 / 768 / 1024 / 1366 / ...</p>
+    <img src="/images/20220131174506_1.jpg" alt="" />
+    <img src="/images/20220131221341_1.jpg" alt="" />
+    <img src="/images/20220201000857_1.jpg" alt="" />
+    <img src="/images/20220202213814_1.jpg" alt="" />
+  </body>
+</html>

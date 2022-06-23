@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <form>
+      <textarea name="something"></textarea>
+      <button>Submit</button>
+      <p id="error" style="display: none">ERRRR</p>
+    </form>
+
+    <script>
+      $(document).ready(() => {
+        $("textarea").on("input", () => {
+          console.log("CHANGED VALUE IN INPUT");
+          $("#error").remove();
+        });
+
+        $("form").on("submit", (event) => {
+          event.preventDefault();
+          console.log("submitted");
+          // const $error = $("<p>").text("THERE WAS AN ERROR");
+          // setTimeout(() => $("form").append($error), 700);
+          // $error.attr("id", "error");
+          // $("#error").remove();
+          $("#error").slideUp();
+          if (true) {
+            $("#error").slideDown();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+section.blog-list {
+  background-color: #ca03ca;
+  color: black; }
+  section.blog-list article {
+    background-color: #c0ffee; }
+    section.blog-list article p {
+      background-color: #ca03ca; }
+
+body {
+  background-color: #101;
+  color: white; }
+
+/*# sourceMappingURL=sass.css.map */

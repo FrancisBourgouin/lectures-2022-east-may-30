@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    /* Desktop First! */
+    body {
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    img {
+      width: 30%;
+      display: block;
+      margin: 1em;
+    }
+
+    @media screen and (max-width: 1500px) {
+      img {
+        width: 40%;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      body {
+        flex-direction: column;
+      }
+      img {
+        width: 100%;
+        margin: 1em 0;
+      }
+    }
+  </style>
+  <body>
+    <img src="/images/20220131174506_1.jpg" alt="" />
+    <img src="/images/20220131221341_1.jpg" alt="" />
+    <img src="/images/20220201000857_1.jpg" alt="" />
+    <img src="/images/20220202213814_1.jpg" alt="" />
+  </body>
+</html>
