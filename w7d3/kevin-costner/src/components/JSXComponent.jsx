@@ -1,3 +1,7 @@
 export default function SomeComponent(props) {
-  return <div></div>;
+  return (
+    <div>
+      <section></section>
+    </div>
+  );
 }
