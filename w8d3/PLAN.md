@@ -92,18 +92,24 @@ const weatherResponse = {
 
 # Mock Data
 
+# Success cases
+
+- Search for a city, see the weather for that city
+- Current weather should not be shown unless we have data / valid data
+- Search for valid city, button appears (once)
+
 # HTML Structure
 
 - body
   - header
     - h1 title
   - main
-    - form
+    - form CityForm 
       - input
       - button
-    - section
+    - section CityList
       - button
-    - section
+    - section CurrentWeather
       - h1 name
       - p conditions
       - p temperature
